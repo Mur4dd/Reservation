@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapşırıq-7</title>
+    <style>
+        form{
+            width: 500px;
+        }
+        span{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservation Request</h1>
+    <form>
+        <fieldset>
+            <legend style="color: blue;"><b>General İnformation</b></legend>
+            <label for="date">Arrival date:</label>
+            <input type="date" name="date" id="date">
+            <span style="color: red;">Arrival date is invalid.</span><br>
+            <label for="nights">Nights:</label>
+            <input type="number" name="nights" id="nights">
+            <span style="color: red;">Night must be a number.</span><br>
+            <label for="adults">Adults:</label>
+            <select name="adults" id="adults">
+                <option value="1">1</option>
+            </select><br>
+            <label for="children">Children:</label>
+            <select name="children" id="children">
+                <option value="0">0</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend style="color: blue;"><b>Preferences</b></legend>
+            <label for="room">Room type:</label>
+            <input type="radio" name="standart" id="standart">
+            <label for="standart">Standart</label>
+            <input type="radio" name="buisness" id="buisness">
+            <label for="buisness">Buisness</label>
+            <input type="radio" name="suite" id="suite">
+            <label for="suite">Suite</label><br>
+            <label for="room">Bed type:</label>
+            <input type="radio" name="king" id="king">
+            <label for="king">King</label>
+            <input type="radio" name="double" id="double">
+            <label for="double">Double</label><br>
+            <input type="checkbox" name="smoking" id="smoking">
+            <label for="smoking">Smoking</label>
+        </fieldset>
+        <fieldset>
+            <legend style="color: blue;"><b>Contact İnformation</b></legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <span style="color: red;">Name is required.</span><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <span style="color: red;">Email address is invalid.</span><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <span style="color: red;">Phone number is invalid.</span><br>
+        </fieldset>
+        <input type="submit" value="Submit Reservation">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
